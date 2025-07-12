@@ -3,6 +3,8 @@ import { PantallaPrincipalComponent } from './pantalla-principal/pantalla-princi
 import { RegistroComponent } from './registro/registro.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { RutinasComponent } from './rutinas/rutinas.component';
+import { AboutComponent } from './about/about.component';
 
 export const routes: Routes = [
   {
@@ -18,8 +20,16 @@ export const routes: Routes = [
         component: PantallaPrincipalComponent,
       },
       {
-        path: 'poto',
+        path: 'login',
         component: LoginComponent,
+      },
+      {
+        path: 'rutina',
+        component: RutinasComponent,
+      },
+      {
+        path: 'about',
+        component: AboutComponent,
       },
     ],
   },
