@@ -3,11 +3,19 @@ import { NavbarComponent } from '../navbar/navbar.component';
 
 import { AsideNavbarComponent } from '../aside-navbar/aside-navbar.component';
 import { RouterOutlet } from '@angular/router';
+import { NgClass, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  imports: [NavbarComponent, AsideNavbarComponent, RouterOutlet],
+  standalone: true,
+  imports: [NavbarComponent, AsideNavbarComponent, RouterOutlet, NgIf, NgClass],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  navbarLateralVisible = true;
+
+  toggleSidebar() {
+    this.navbarLateralVisible = !this.navbarLateralVisible;
+  }
+}

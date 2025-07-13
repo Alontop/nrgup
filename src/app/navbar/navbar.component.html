@@ -1,5 +1,15 @@
-<div class="bg-cyan-900 p-9 justify-center text-center">
-  <span class="font-semibold text-white text-3xl font-jost"
-    >NRGup <i class="fa-solid fa-dumbbell"></i
-  ></span>
+<div class="bg-gray-900 p-10 flex justify-between items-center">
+  <!-- Botón a la izquierda -->
+  <button
+    (click)="onToggleSidebar()"
+    class="text-white text-2xl hover:scale-110 transition duration-200"
+    aria-label="Toggle sidebar"
+  >
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <!-- Logo a la derecha -->
+  <a href="#" class="font-semibold text-white text-2xl font-jost">
+    NRGup <i class="fa-solid fa-dumbbell"></i>
+  </a>
 </div>
