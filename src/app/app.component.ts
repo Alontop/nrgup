@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+
+declare const AOS: any;
 
 @Component({
   selector: 'app-root',
@@ -8,6 +10,10 @@ import { HomeComponent } from './home/home.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
+    AOS.init;
+    setTimeout(() => AOS.refresh(), 200);
+  }
   title = 'nrgup';
 }
