@@ -1,0 +1,21 @@
+{
+  "particles": {
+    "number": { "value": 40 },
+    "size": { "value": 3 },
+    "color": { "value": "#38bdf8" },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#38bdf8",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": { "enable": true, "speed": 2 }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": { "enable": true, "mode": "repulse" },
+      "onclick": { "enable": true, "mode": "push" }
+    }
+  }
+}
