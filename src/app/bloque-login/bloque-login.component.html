@@ -1,5 +1,23 @@
+<style>
+  @keyframes respiracion {
+    0%,
+    100% {
+      border-color: rgba(59, 130, 246, 0.3);
+      box-shadow: 0 0 0px rgba(59, 130, 246, 0.3);
+    }
+    50% {
+      border-color: rgb(108, 207, 247);
+      box-shadow: 0 0 12px rgba(59, 130, 246, 0.8);
+    }
+  }
+
+  .respiracion {
+    animation: respiracion 6s ease-in-out infinite;
+  }
+</style>
+
 <form
-  class="bg-transparent border-2 border-cyan-600 p-8 rounded-lg shadow-md w-150 max-w-md space-y-6 h-auto mt-10"
+  class="bg-transparent border-2 border-cyan-600 p-8 rounded-lg shadow-md w-150 max-w-md space-y-6 h-auto mt-10 respiracion"
 >
   <h2 class="text-2xl font-jost font-semibold text-center text-white">
     Inicio de Sesión
@@ -30,11 +48,19 @@
       placeholder="Min. 6 Caractéres"
     />
   </div>
+  <span class="text-white"
+    >¿Aún no tienes una cuenta?
+    <a
+      href="/registro"
+      class="text-cyan-400 hover:text-cyan-600 transition duration-200"
+      >Regístrate Ahora</a
+    ></span
+  >
 
   <!-- Botón -->
   <button
     type="submit"
-    class="w-full bg-cyan-600 hover:bg-gray-900 border-2 border-transparent hover:border-cyan-500 text-white font-jost font-semibold py-2 px-4 rounded transition duration-250 placeholder-neutral-400"
+    class="w-full bg-cyan-600 hover:bg-gray-900 border-2 border-transparent hover:border-cyan-500 text-white font-jost font-semibold py-2 px-4 rounded transition duration-250 placeholder-neutral-400 mt-5"
   >
     Ingresar
   </button>
