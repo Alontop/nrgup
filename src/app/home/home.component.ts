@@ -8,12 +8,12 @@ import { NgClass, NgIf } from '@angular/common';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent, AsideNavbarComponent, RouterOutlet, NgIf, NgClass],
+  imports: [NavbarComponent, AsideNavbarComponent, RouterOutlet, NgIf],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  navbarLateralVisible = true;
+  navbarLateralVisible = false;
 
   toggleSidebar() {
     this.navbarLateralVisible = !this.navbarLateralVisible;

@@ -17,7 +17,7 @@ export const routes: Routes = [
       },
       {
         path: '',
-        component: PantallaPrincipalComponent,
+        component: RegistroComponent,
       },
       {
         path: 'login',
